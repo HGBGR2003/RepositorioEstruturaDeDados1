@@ -1,9 +1,4 @@
-/**
- * 
- */
-/**
- * 
- */
+
 module ExerciciosRev {
-	 requires java.desktop;
+	requires java.desktop;
 }
