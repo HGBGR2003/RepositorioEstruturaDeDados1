@@ -17,6 +17,16 @@ public class VetorUtilTest {
     
     @Test
     void copiarValoresInversosDeDoisVetores(){
+        int [] vetor1 = {1,2,3};
+        int [] vetor2 = {0,0,0};
+
+        VetorUtil vet = new VetorUtil();
+
+
+        vet.copiarValoresInverso(vetor1, vetor2);
+
+       assertArrayEquals(new int [] {3,2,1}, vetor2);
+
 
     }
     
