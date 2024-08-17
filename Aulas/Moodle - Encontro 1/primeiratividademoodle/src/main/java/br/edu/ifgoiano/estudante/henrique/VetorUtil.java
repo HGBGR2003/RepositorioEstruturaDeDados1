@@ -1,6 +1,6 @@
 package br.edu.ifgoiano.estudante.henrique;
 
-public class  VetorUtil implements IVetorUtil {
+public class  VetorUtil implements IVetorUtil{
     @Override
     public void copiarValores(int[] a, int[] b) {
         for(int i = 0; i < a.length; i++){
@@ -18,18 +18,28 @@ public class  VetorUtil implements IVetorUtil {
 
     @Override
     public int[] intercalarElementos(int[] a, int[] b) {
-       for(int i = 0; i < a.length; i++){
+     
+        int [] [] result = new int[a.length][b.length];
+
+        for(int i = 0; i < a.length; i++){
         for(int k = 0; k < b.length; k++){
-            b[i,k] = a[k,i];
+            result [i] [k] = Integer.valueOf(String.valueOf(i + String.valueOf(k)));
         }
        }
-        
+     
+      return result; 
     }
 
     @Override
     public int[] somarVetores(int[] a, int[] b) {
-        // TODO Auto-generated method stub
-        return null;
+    
+        int [] soma = new int [b.length];
+
+        for(int i = 0; i < a.length; i++){
+            soma[i] = a[i] + b[i];
+         }
+
+        return soma;
     }
 
 

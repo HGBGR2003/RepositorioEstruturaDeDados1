@@ -32,12 +32,25 @@ public class VetorUtilTest {
     
     @Test 
     void intercalarElementosDeDoisVetores(){
+        int [] vetor1 = {1,2};
+        int [] vetor2 = {2,3,4,5};
+
+        VetorUtil vet = new VetorUtil();
+
+        
 
     }
     
     
     @Test
     void somarDoisNumerosDentroDoVetor(){
+        int [] vetor1 = {1,2,3};
+        int [] vetor2 = {4,5,6};
+        VetorUtil vet = new VetorUtil();
+
+        int [] resultadoDaSoma = vet.somarVetores(vetor1, vetor2);
+
+        assertArrayEquals(new int [] {5,7,9}, resultadoDaSoma);
 
     }
   
