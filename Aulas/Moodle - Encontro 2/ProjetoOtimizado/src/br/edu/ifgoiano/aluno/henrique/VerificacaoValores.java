@@ -6,6 +6,7 @@ public class VerificacaoValores {
         int novaDireita =  d;
         return novaDireita = resultante - 1;
     }
+
     private static  int esquerda(int  e ,int resultante ){
         int  novaEsquerda = e;
         return novaEsquerda = resultante + 1;
