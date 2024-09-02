@@ -2,6 +2,16 @@ package br.edu.ifgoiano.aluno.henrique;
 
 public class BuscaDeValores {
     public static void main(String[] args) {
+        int [][] matrizFuncionando = {
+                {1, 4, 7, 11},
+                {2, 5, 8, 12},
+                {3, 6, 9, 16},
+                {10, 13, 14, 17}
+        };
+
+        int valor  = 17;
+
+        buscaDeValores(matrizFuncionando, valor);
 
     }
 
